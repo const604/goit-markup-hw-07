@@ -86,6 +86,16 @@
     text-decoration: none;
   }
 
+  .mobile-contact-link-tel {
+    display: block;
+    margin-bottom: 40px;
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    text-decoration: none;
+  }
+
   .mobile-contact-link:hover,
   .mobile-contact-link:focus {
     color: var(--accent-color);
