@@ -23,6 +23,9 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+
 }
 
 button {
@@ -240,7 +243,7 @@ body {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url(../images/people-office-mob.webp);
+    url(../images/hero/people-office-mob.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -255,7 +258,7 @@ body {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
       ),
-      url(../images/people-office-mob@2x.webp);
+      url(../images/hero/people-office-mob@2x.webp);
   }
 }
 
@@ -302,7 +305,7 @@ body {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
       ),
-      url(../images/people-office-tabl.webp);
+      url(../images/hero/people-office-tabl.webp);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -314,7 +317,7 @@ body {
           rgba(0, 0, 0, 0.6),
           rgba(0, 0, 0, 0.6)
         ),
-        url(../images/people-office-tabl@2x.webp);
+        url(../images/hero/people-office-tabl@2x.webp);
     }
   }
   .hero-title {
@@ -334,7 +337,7 @@ body {
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
       ),
-      url(../images/people-office.webp);
+      url(../images/hero/people-office.webp);
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -346,7 +349,7 @@ body {
           rgba(0, 0, 0, 0.6),
           rgba(0, 0, 0, 0.6)
         ),
-        url(../images/people-office@2x.webp);
+        url(../images/hero/people-office@2x.webp);
     }
   }
 
