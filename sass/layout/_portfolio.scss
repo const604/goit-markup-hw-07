@@ -1,0 +1,156 @@
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.filters-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
+}
+
+.filters-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 16px;
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+  color: var(--accent-color);
+  background-color: var(--section-team-bg-color);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.filters-link:hover,
+.filters-link:focus {
+  background-color: var(--accent-color);
+  border-color: transparent;
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-list {
+  gap: 24px;
+}
+
+.portfolio-item {
+  max-width: 396px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-card {
+  padding: 32px 16px;
+  margin-left: 0;
+  border: 0.5px solid var(--section-team-bg-color);
+  border-top: none;
+}
+
+.portfolio-title {
+  margin-bottom: 8px;
+  color: var(--title-text-color);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-text {
+  color: var(--primary-text-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.portfolio-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-picture {
+  width: 100%;
+}
+
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
+  transform: translate(0, 0);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, 100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 164px;
+  color: var(--section-team-bg-color);
+  background-color: var(--accent-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filters-list {
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .portfolio-item {
+    max-width: 356px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+
+  .filters-list {
+    margin-bottom: 72px;
+  }
+
+  .portfolio-list {
+    row-gap: 48px;
+  }
+
+  .portfolio-item {
+    max-width: 360px;
+  }
+}

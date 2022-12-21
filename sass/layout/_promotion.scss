@@ -1,0 +1,27 @@
+@media screen and (max-width: 1199px) {
+  .promotion {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .promotion {
+    padding-bottom: 120px;
+  }
+
+  .promotion-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .section-title {
+    margin-bottom: 72px;
+    color: var(--title-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+}
